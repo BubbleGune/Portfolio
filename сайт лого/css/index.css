@@ -215,25 +215,45 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 84px 0;
 }
 
+.item {
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.item__row {
+  width: 1100px;
+  max-height: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.item__body .item__title {
+  margin: 0 0 40px 0;
+}
+
 .item__image {
   text-align: center;
   margin: 0 0 24px 0;
+  flex: 1 1 auto;
 }
 .item__image img {
   width: 88px;
   height: 88px;
-  background-color: #31C5F0;
 }
 
-.item__body > .text {
+.item__title {
   font-size: 14px;
   line-height: 17px;
   color: #828282;
-  margin: 0 0 40px 0;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .item__stars {
-  text-align: center;
+  text-align: unset;
   overflow: hidden;
   width: 265px;
   margin: 0 auto;
@@ -242,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .item__stars:not(:checked) > label {
-  font-size: 26px;
+  font-size: 23px;
 }
 .item__stars:not(:checked) > label:before {
   content: "★";
@@ -250,6 +270,92 @@ h1, h2, h3, h4, h5, h6 {
 }
 .item__stars:not(:checked) > label:nth-child(10)::before {
   color: #E5E5E5;
+}
+
+.color2:not(:checked) > label:nth-child(8)::before {
+  color: #E5E5E5;
+}
+.color2:not(:checked) > label:nth-child(10)::before {
+  color: #E5E5E5;
+}
+
+.portfolio__title {
+  padding: 115px 0 45px 0;
+}
+
+.portfolio__item > .item__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__row {
+  width: 100%;
+  height: 2300px;
+  background: #F6F6F6;
+}
+
+.item__text {
+  padding: 45px 0 100px;
+  color: #070707;
+  font-size: 18px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.portfolio__item1 > .item__image {
+  background: url("../img/img_portfolio_media.png") 0 0 no-repeat;
+  height: 520px;
+  width: 935px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.portfolio__item2 > .item__image {
+  background: url("../img/img_portfolio_cinema.png") 0 0 no-repeat;
+  height: 520px;
+  width: 935px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.portfolio__item3 > .item__image {
+  background: url("../img/img_portfolio_windows8.png") 0 0 no-repeat;
+  height: 520px;
+  width: 935px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.contacts__row {
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 115px 0 20px 0;
+}
+
+.contacts__button {
+  display: flex;
+  justify-content: center;
+}
+
+.button__link {
+  color: #ffffff;
+  width: 166px;
+  height: 30px;
+  margin: 30px 0 80px 0;
+  background: #070707;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__item1 {
+  background: url("../img/icons_inst.png") no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
 .footer {
